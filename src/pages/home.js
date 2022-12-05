@@ -23,13 +23,14 @@ const Home = () => {
   return (
     <>
       <WebLayout>
+
         <ListGroup>
-        {data && data.map((item,index)=>{
-          console.log('index',index)
-          return(
-            <ListGroup.Item  key={`data${index}`}>{index+1}{item?.name}</ListGroup.Item>
-          )
-        })}   
+          {data && data.map((item, index) => {
+            console.log('index', index)
+            return (
+              <ListGroup.Item key={`data${index}`}>{index + 1}{item?.name}</ListGroup.Item>
+            )
+          })}
         </ListGroup>
       </WebLayout>
     </>
